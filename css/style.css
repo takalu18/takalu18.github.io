@@ -94,10 +94,6 @@ img {
   fill: #1ab0ce;
 }
 
-.page-header__user use {
-  transform: translate(-639, 497);
-}
-
 .page-header__user-block:hover  .page-header__user {
   fill: #0787a1;
 }
@@ -156,17 +152,24 @@ img {
   width: 13px;
 }
 
-.phone__social:hover  .page-header__fb {
-  fill: #0787a1;
-}
-
-.phone__social:active  .page-header__fb {
-  fill: #99e9f9;
-}
-
 .phone__social  img {
   width: auto;
   height: 22px;
+}
+
+.phone__social  svg {
+  fill: none;
+  stroke: #3D76B9;
+  width: 13px;
+  height: 22px;
+}
+
+.phone__social:hover  svg {
+  stroke: #16b1d1;
+}
+
+.phone__social:active  svg {
+  stroke: #78e4f9;
 }
 
 .phone__number1 {
