@@ -1,0 +1,26 @@
+<svg width="20" height="20" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group 2</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-964 462)">
+<g id="Group 2">
+<g id="Ellipse">
+<use xlink:href="#path0_fill" transform="translate(964 -462)" fill="#EDEDED"/>
+</g>
+<g id="chevron-right">
+<g id="Page 1">
+<g id="feather icon">
+<g id="chevron right">
+<g id="Shape">
+<use xlink:href="#path1_stroke" transform="matrix(6.12323e-17 1 1 -6.12323e-17 970 -453)" fill="#3A4047"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 20 10C 20 15.5228 15.5228 20 10 20C 4.47715 20 0 15.5228 0 10C 0 4.47715 4.47715 0 10 0C 15.5228 0 20 4.47715 20 10Z"/>
+<path id="path1_stroke" d="M -0.707107 7.29289C -1.09763 7.68342 -1.09763 8.31658 -0.707107 8.70711C -0.316583 9.09763 0.316583 9.09763 0.707107 8.70711L -0.707107 7.29289ZM 4 4L 4.70711 4.70711C 5.09763 4.31658 5.09763 3.68342 4.70711 3.29289L 4 4ZM 0.707107 -0.707107C 0.316583 -1.09763 -0.316583 -1.09763 -0.707107 -0.707107C -1.09763 -0.316583 -1.09763 0.316583 -0.707107 0.707107L 0.707107 -0.707107ZM 0.707107 8.70711L 4.70711 4.70711L 3.29289 3.29289L -0.707107 7.29289L 0.707107 8.70711ZM 4.70711 3.29289L 0.707107 -0.707107L -0.707107 0.707107L 3.29289 4.70711L 4.70711 3.29289Z"/>
+</defs>
+</svg>
