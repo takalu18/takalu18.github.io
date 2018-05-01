@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol id="icon-user" viewBox="0 0 14 15">
+	  <path id="path0_stroke" transform="translate(1 10)" d="M11.06 4.33a.5.5 0 1 0 1 0h-1zm-11.56 0a.5.5 0 1 0 1 0h-1zm12.56 0V2.9h-1v1.44h1zm0-1.44A3.39 3.39 0 0 0 8.66-.5v1a2.39 2.39 0 0 1 2.4 2.39h1zM8.66-.5H2.9v1h5.78v-1zM2.9-.5A3.39 3.39 0 0 0-.5 2.89h1A2.39 2.39 0 0 1 2.89.5v-1zM-.5 2.89v1.44h1V2.9h-1z"/>
+	  <path id="path1_stroke" transform="translate(3.89 1)" d="M5.28 2.89a2.39 2.39 0 0 1-2.4 2.39v1a3.39 3.39 0 0 0 3.4-3.4h-1zm-2.4 2.39A2.39 2.39 0 0 1 .5 2.88h-1a3.39 3.39 0 0 0 3.39 3.4v-1zM.5 2.88A2.39 2.39 0 0 1 2.89.5v-1A3.39 3.39 0 0 0-.5 2.89h1zM2.89.5a2.39 2.39 0 0 1 2.39 2.39h1A3.39 3.39 0 0 0 2.88-.5v1z"/>
+	</symbol>
+	
+	<symbol id="facebook" viewBox="0 0 26 44">
+	  <path d="M11 0H8a5 5 0 0 0-5 5v3H0v4h3v8h4v-8h3l1-4H7V5a1 1 0 0 1 1-1h3V0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(1 1)"/>
+	</symbol>
+	
+	<symbol id="chevron-down" viewBox="0 0 20 20">
+	  <circle id="chevron-circle" cx="10" cy="10" r="10"/>
+	  <path d="M14 9l-4 4-4-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#3A4047"/>
+	</symbol>
+	
+	<symbol id="basket" viewBox="0 0 48 48">
+	  <path d="M8 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0z" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" transform="translate(12 38)"/>
+	  <path d="M8 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0z" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" transform="translate(36 38)"/>
+	  <path d="M9.34 10H44l-3.36 16.78a4 4 0 0 1-4 3.22H15.5a4 4 0 0 1-4-3.48L8.46 3.48A4 4 0 0 0 4.5 0H0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 2)"/>
+	</symbol>
+	
+	<symbol id="toggle" viewBox="0 0 20 14">
+	  <path d="M0 0h18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(1 7)"/>
+	  <path d="M0 0h18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(1 1)"/>
+	  <path d="M0 0h18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(1 13)"/>
+	</symbol>
+  </defs>
+</svg>

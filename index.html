@@ -13,8 +13,18 @@
   <body>  
     <header class="page-header">
 	  <div class="page-header__top">
+	    
+		<button class="page-header__toggle" type="button">
+		  <svg>
+		    <use xlink:href="img\sprites\sprite.svg#toggle"/>
+		  </svg>
+		</button>
+		
 		<div class="logo">
 		  <img class="logo__img" src="img/logo-ful.svg" width="258" height="77" alt="test-verstka">
+		  <!--<svg class="">
+		    <use xlink:href="img\sprites\sprite.svg#logo"/>
+		  </svg>-->
 		</div>
 	  
 	    <div class="promo-block">
@@ -33,26 +43,29 @@
 		  <div class="page-header__info">
 	        <a class="page-header__mail" href="mailto:maket@test-vertka.ua">maket@test-vertka.ua</a>
             <div class="phone">
-		      <a class="phone__social" href="#">
+		      <a class="phone__social" href="#" title="Наш Вконтакте">
 			    <!--<img src="img/svg/fb-icon.svg" width="11" height="20" alt="Facebook">-->
-			    <svg>
+			    <svg aria-hidden="true">
                   <use xlink:href="img/sprites/sprite.svg#facebook"/>              
                 </svg>
 			  </a>
-		      <p class="phone__number1">
-			    <span class="phone__num">(044) 345-40-42</span>
-			    <span class="phone__btn">
-			      <!--<img src="img/svg/icon-chevron.svg" width="20" height="20" alt="Other phones">-->
-				  <svg>
-				    <use xlink:href="img/sprites/sprite.svg#chevron-down"/>
-				  </svg>				
-			    </span>
-			  </p>
-		      <div class="phone__numbers">
-		        <span class="phone__number  phone__number2">(099) 485-54-18</span>
-			    <span class="phone__number  phone__number3">(096) 497-78-03</span>
-			    <span class="phone__number  phone__number4">(063) 435-16-81</span>
-		      </div>
+			  <div class="phone__number1-wrapper">
+		        <p class="phone__number1">
+			      <span class="phone__num">(044) 345-40-42</span>
+			      <span class="phone__btn">
+			        <!--<img src="img/svg/icon-chevron.svg" width="20" height="20" alt="Other phones">-->
+				    <svg>
+				      <use xlink:href="img/sprites/sprite.svg#chevron-down"/>
+				    </svg>				
+			      </span>
+			    </p>
+			  
+		        <div class="phone__numbers">
+		          <span class="phone__number  phone__number2">(099) 485-54-18</span>
+			      <span class="phone__number  phone__number3">(096) 497-78-03</span>
+			      <span class="phone__number  phone__number4">(063) 435-16-81</span>
+		        </div>
+			  </div>
 		    </div>		 
 	      </div>
 		
