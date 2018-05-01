@@ -50,21 +50,21 @@
                 </svg>
 			  </a>
 			  <div class="phone__number1-wrapper">
-		        <p class="phone__number1">
-			      <span class="phone__num">(044) 345-40-42</span>
-			      <button class="phone__btn" type="button">
+		        <div class="phone__number1">
+			      <span class="phone__num" tabindex="0" aria-label="Наш киевский номер">(044) 345-40-42</span>
+			      <button id="phone-btn" class="phone__btn" type="button">
 			        <!--<img src="img/svg/icon-chevron.svg" width="20" height="20" alt="Other phones">-->
 				    <svg>
 				      <use xlink:href="img/sprites/sprite.svg#chevron-down"/>
 				    </svg>				
 			      </button>
 			    			  
-		          <ul class="phone__numbers">
-		            <li class="phone__number  phone__number2">(099) 485-54-18</li>
-			        <li class="phone__number  phone__number3">(096) 497-78-03</li>
-			        <li class="phone__number  phone__number4">(063) 435-16-81</li>
-		          </div>
-				</p>
+		          <ul id="phone-numbers" class="phone__numbers">
+		            <li class="phone__number  phone__number2" tabindex="0" aria-label="Наш номер водафон">(099) 485-54-18</li>
+			        <li class="phone__number  phone__number3" tabindex="0" aria-label="Наш номер киевстар">(096) 497-78-03</li>
+			        <li class="phone__number  phone__number4" tabindex="0" aria-label="Наш номер лайф">(063) 435-16-81</li>
+		          </ul>
+				</div>
 			  </div>
 		    </div>		 
 	      </div>
@@ -84,7 +84,9 @@
 	   
 
 	</header>
-    
-	<script type="text/javascript" src="modulargrid.js"></script>
+	
+	 
+    <script src="js/script.js"></script>
+	<!--<script type="text/javascript" src="modulargrid.js"></script>-->
   </body>
 </html>
