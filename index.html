@@ -13,85 +13,97 @@
   <body>  
     <header class="page-header">
       <div class="page-header__top">
-        
-        <button class="page-header__toggle" type="button" aria-label="Главное меню">
-          <svg>
-            <use xlink:href="img\sprites\sprite.svg#toggle"/>
-          </svg>
-        </button>
-
-        <div class="logo">
-          <img class="logo__img" src="img/logo-ful.svg" width="258" height="77" alt="test-verstka">
-          <!--<svg class="">
-            <use xlink:href="img\sprites\sprite.svg#logo"/>
-          </svg>-->
-        </div>
-
-        <div class="promo-block">
-          <p class="promo-block__slogan">Качественная оперативная цифровая, широкоформатная и сувенирная полиграфия!</p>
-          <p class="promo-block__timetable">Работаем с 9 до 18, вс и сб выходные</p>
-        </div>
-
-        <div class="page-header__part-down">
-          <a class="page-header__user-block" href="#" aria-label="Личный кабинет">		  
-            <svg class="page-header__user">
-              <use xlink:href="img\sprites\sprite.svg#icon-user"/>
+        <div class="page-header__top-inner">
+          <button id="btn-open"  class="page-header__toggle" type="button" aria-label="Главное меню">
+            <svg>
+              <use xlink:href="img\sprites\sprite.svg#toggle"/>
             </svg>
-            <span aria-hidden="true">Личный кабинет</span>
-          </a>
+          </button>
+		  
+		  <button id="btn-close"  class="page-header__toggle  page-header__toggle--plus" type="button" aria-label="Закрыть главное меню">
+            <svg>
+              <use xlink:href="img\sprites\sprite.svg#plus"/>
+            </svg>
+          </button>
 
-          <div class="page-header__info">
-            <a class="page-header__mail" href="mailto:maket@test-vertka.ua">maket@test-vertka.ua</a>
-            <div class="phone">
-              <a class="phone__social" href="#" aria-label="Наш Facebook">
-                <!--<img src="img/svg/fb-icon.svg" width="11" height="20" alt="Facebook">-->
-                <svg aria-hidden="true">
-                  <use xlink:href="img/sprites/sprite.svg#facebook"/>              
-                </svg>
-              </a>
-              <div class="phone__number1-wrapper">
-                <div class="phone__number1">
-                  <span class="phone__num" tabindex="0" aria-label="Наш киевский номер (044) 345-40-42">(044) 345-40-42</span>
-                  <button id="phone-btn" class="phone__btn" type="button" aria-label="показать или спрятать список всех номеров">
-                    <!--<img src="img/svg/icon-chevron.svg" width="20" height="20" alt="Other phones">-->
-                    <svg>
-                      <use xlink:href="img/sprites/sprite.svg#chevron-down"/>
-                    </svg>				
-                  </button>
-
-                  <ul id="phone-numbers" class="phone__numbers" aria-label="Наши мобильные номера">
-                    <li class="phone__number  phone__number2" tabindex="0" aria-label="Наш номер водафон (099) 485-54-18">(099) 485-54-18</li>
-                    <li class="phone__number  phone__number3" tabindex="0" aria-label="Наш номер киевстар (096) 497-78-03">(096) 497-78-03</li>
-                    <li class="phone__number  phone__number4" tabindex="0" aria-label="Наш номер лайф (063) 435-16-81">(063) 435-16-81</li>
-                  </ul>
-                </div>
-              </div>
-            </div>		 
+          <div class="logo">
+            <img class="logo__img" src="img/logo-ful.svg" width="258" height="77" alt="test-verstka">
+            <!--<svg class="">
+              <use xlink:href="img\sprites\sprite.svg#logo"/>
+            </svg>-->
           </div>
 
-          <a class="page-header__basket" href="#" aria-label="Корзина">
-            <!--<img src="img/svg/icon-cart.svg" width="46" height="46" alt="shopping-cart">-->
-            <svg>
-              <use xlink:href="img/sprites/sprite.svg#basket"/>
-            </svg>
-            <div class="page-header__basket-circle">
-              <span class="page-header__basket-number">3</span>
-            </div>		   
-          </a>
-        </div>
+          <div class="promo-block">
+            <p class="promo-block__slogan">Качественная оперативная цифровая, широкоформатная и сувенирная полиграфия!</p>
+            <p class="promo-block__timetable">Работаем с 9 до 18, вс и сб выходные</p>
+          </div>
+
+          <div class="page-header__part-down">
+            <a class="page-header__user-block" href="#" aria-label="Личный кабинет">		  
+              <svg class="page-header__user">
+                <use xlink:href="img\sprites\sprite.svg#icon-user"/>
+              </svg>
+              <span aria-hidden="true">Личный кабинет</span>
+            </a>
+
+            <div id="header-info"  class="page-header__info">
+              <a class="page-header__mail" href="mailto:maket@test-vertka.ua">maket@test-vertka.ua</a>
+              <div class="phone">
+                <a class="phone__social" href="#" aria-label="Наш Facebook">
+                  <!--<img src="img/svg/fb-icon.svg" width="11" height="20" alt="Facebook">-->
+                  <svg aria-hidden="true">
+                    <use xlink:href="img/sprites/sprite.svg#facebook"/>              
+                  </svg>
+                </a>
+                <div class="phone__number1-wrapper">
+                  <div class="phone__number1">
+                    <span class="phone__num" tabindex="0" aria-label="Наш киевский номер (044) 345-40-42">(044) 345-40-42</span>
+                    <button id="phone-btn" class="phone__btn" type="button" aria-label="показать или спрятать список всех номеров">
+                      <!--<img src="img/svg/icon-chevron.svg" width="20" height="20" alt="Other phones">-->
+                      <svg>
+                        <use xlink:href="img/sprites/sprite.svg#chevron-down"/>
+                      </svg>				
+                    </button>
+
+                    <ul id="phone-numbers" class="phone__numbers" aria-label="Наши мобильные номера">
+                      <li class="phone__number  phone__number2" tabindex="0" aria-label="Наш номер водафон (099) 485-54-18">(099) 485-54-18</li>
+                      <li class="phone__number  phone__number3" tabindex="0" aria-label="Наш номер киевстар (096) 497-78-03">(096) 497-78-03</li>
+                      <li class="phone__number  phone__number4" tabindex="0" aria-label="Наш номер лайф (063) 435-16-81">(063) 435-16-81</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>		 
+            </div>
+
+            <a class="page-header__basket" href="#" aria-label="Корзина">
+              <!--<img src="img/svg/icon-cart.svg" width="46" height="46" alt="shopping-cart">-->
+              <svg>
+                <use xlink:href="img/sprites/sprite.svg#basket"/>
+              </svg>
+              <div class="page-header__basket-circle">
+                <span class="page-header__basket-number">3</span>
+              </div>		   
+            </a>
+          </div>
+		</div>
       </div>
 
-      <nav>
-        <ul>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-        </ul>
+      <nav id="main-nav"  class="main-nav"  aria-label="Основное меню"  role="navigation">
+        <div class="main-nav__inner">
+          <a class="main-nav__item" href="#"><span>Главная</span></a>
+          <a class="main-nav__item" href="#"><span>Продукция</span></a> 
+          <a class="main-nav__item" href="#"><span>Доставка и оплата</span></a>
+          <a class="main-nav__item" href="#"><span>Новости</span></a>
+          <a class="main-nav__item" href="#"><span>База знаний</span></a>
+          <a class="main-nav__item" href="#"><span>О нас</span></a>
+          <a class="main-nav__item" href="#"><span>Контакты</span></a>
+          <a class="main-nav__item  main-nav__item--search" href="#">
+			  <svg>
+                <use xlink:href="img/sprites/sprite.svg#search"/>
+              </svg>
+			  Пошук
+		  </a>
+		</div>
       </nav>
 
    
@@ -100,6 +112,6 @@
 
 
     <script src="js/script.js"></script>
-    <script src="modulargrid.js"></script>
+    <!--<script src="modulargrid.js"></script>-->
   </body>
 </html>
