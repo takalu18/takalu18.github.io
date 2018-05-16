@@ -55,8 +55,8 @@ img {
   width: 100%; 
   max-width: 1170px; 
   margin: 0 auto;
-  padding-top: 18px;
-  padding-bottom: 8px;
+  padding-top: 17px;
+  padding-bottom: 9px;
   background-color: #f9e9e9; 
 }
 
@@ -290,20 +290,41 @@ img {
 .phone__numbers {
   display: none;
   position: absolute;
-  top: 44px;
-  left: 13px;
+  top: 47px;
+  left: 6px;
+  z-index: 1;
+}
+
+.phone__numbers-inner {
+  position: relative;
+  z-index: 10;
   width: 219px;
   padding: 29px 0px 16px 0px;
   background-color: #fff;
-   -webkit-filter: drop-shadow(0 0 5px #b8b6b6);
-           filter: drop-shadow(2px 1px 4px #cac7c7);
-  z-index: 10;
+  box-shadow: 0px 0px 2px 3px #efeeee;   
+}
+
+.phone__numbers::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: 6px;
+  z-index: 20;
+  display: block;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  background-color: #fff;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+		  /*! border: 1px solid transparent; */
 }
 
 .phone__numbers::after {
   content: "";
   position: absolute;
-  top: -4px;
+  top: 12px;
   right: 6px;
   z-index: 1;
   display: block;
@@ -314,6 +335,7 @@ img {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
+   box-shadow: 0px 0px 2px 3px #efeeee; 
 }
 
 .phone__number1-wrapper:hover .phone__numbers {
@@ -386,7 +408,7 @@ img {
   content: "";
   display: block;
   position: absolute;
-  top: -1px;
+  top: 0px;
   right: 0;
   width: 100%;
   height: 1px;
@@ -481,6 +503,57 @@ img {
   padding-left: 5px;
   padding-right: 6px;
 }
+
+
+/*** main ***/
+.order {
+  width: 100%;
+  min-height: 500px;  
+  text-align: center;
+  color: #fff;
+  background-color: #bdbaba;
+  background-image: url("../img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+.order__promo {
+  position: relative;
+  margin: 0 0 38px 0;
+  padding-top: 160px;
+  font-size: 57px;
+  font-family: "Clear Sans Bold";
+  line-height: 60px;
+}
+
+.order__promo::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -21px;
+  right: calc(50% - 60px);
+  width: 120px;
+  height: 2px;  
+  background-color: #fff;
+}
+
+.order__text {
+  margin: 0 0 36px 0;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.order__btn {
+  padding: 11px 46px 14px;
+  font-size: 16px;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+  background-color: #1ab0ce;
+  border-radius: 2px;
+}
+
 	
 
 /******                 ******/
@@ -553,6 +626,8 @@ img {
 
 
  
+
+ 
 /******                 ******/
 /******    @media       ******/
 /******                 ******/
@@ -605,6 +680,14 @@ img {
     font-size: 15px;
     background: url("../img/phone.svg") 34px 20px no-repeat;
     background-size: 20px auto;
+  }
+  
+  .phone__numbers-inner {
+    width: 217px;
+  }
+  
+  .phone__btn {
+    right: -4px;
   }
 
   .page-header__basket {
@@ -682,8 +765,14 @@ img {
     padding-right: 6px;
   }
   
-  .main-nav__item--search {
-    
+  .order {
+    min-height: 470px;
+	background-size: auto 470px;
+  }
+  
+  .order__promo {
+    font-size: 46px;
+    padding-top: 133px;
   }
   
   
@@ -768,12 +857,18 @@ img {
   }
   
   .phone__numbers {
-	top: 47px;
+	top: 27px;
     left: -3px;
 	width: 214px;
-    padding: 18px 0px 7px 0px;
-	
+    padding: 18px 0px 7px 0px;	
   }
+  
+  .phone__numbers-inner {
+    top: -18px;
+	padding-top: 20px;
+    padding-bottom: 10px;
+    width: 214px;
+}
 	
   .phone__number {
     margin-bottom: 14px;
@@ -818,6 +913,28 @@ img {
   
   .main-nav__item  {
 	padding-bottom: 0;
+	padding-left: 3.5%;
+	padding-right: 3.5%;
+  }
+  
+  .main-nav__item:last-child {
+    padding-left: 3%;
+
+}
+  
+  .main-nav__item:hover::before {
+    display: none;
+  }
+  
+  .order {
+    min-height: 410px;
+    /*background-position: center 0;*/
+	background-size: auto 410px;
+  }
+  
+  .order__promo {
+    font-size: 41px;
+    padding-top: 110px;
   }
   
   .no-flexbox.no-flexboxtweener .page-header__top-inner {
@@ -864,11 +981,26 @@ img {
 
 @media screen and (max-width: 1000px) {
   .page-header__top-inner {
-    background-color: lightblue;
+    /*! background-color: lightblue; */
   }
   
   .main-nav__inner  a.main-nav__item--search  {
     padding-left: 17px;
+  }
+  
+  .order {
+    min-height: 390px;
+    /*background-position: center 0;*/
+	background-size: auto 390px;
+  }
+  
+  .order__promo {
+    font-size: 37px;
+    padding-top: 93px;
+  }
+  
+  .order__text {
+    font-size: 24px;
   }
 
   .no-flexbox.no-flexboxtweener .page-header__top-inner {
@@ -895,7 +1027,8 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     position: relative;
-	
+	padding-left: 17px;
+    padding-right: 17px;
 	background-color: lightyellow;
   }
 
@@ -984,11 +1117,11 @@ img {
   
   .phone__numbers {
     z-index: 10;
-}
+  }
  
  .page-header__basket {
     top: -3px;
-    right: -4px;
+    right: -1px;
   }
  
  .page-header__basket svg {
@@ -999,7 +1132,50 @@ img {
   .page-header__basket-circle {
      display: none;
   }
+  
+  .order {
+    min-height: 345px;
+	background-size: auto 345px;
+  }
+  
+  .order__promo {
+    font-size: 32px;
+    padding-top: 74px;
+    margin-bottom: 27px;
+  }
+  
+  .order__promo::after {
+    bottom: -12px;
+  }
+  
+  .order__text {
+    margin-bottom: 36px;
+    font-size: 22px;
+  }
 }
+
+
+
+@media screen and (max-width: 710px) {
+  .order {
+    min-height: 310px;
+	background-size: auto 310px;
+  }
+  
+  .order__promo {
+	/*! width: 496px; */
+	margin: 0 auto 27px auto;
+	padding-top: 67px;
+	line-height: 39px;
+    font-size: 26px;     
+  }
+  
+  .order__promo::after {
+    bottom: -17px;
+  }
+}
+  
+  
 
 @media screen and (max-width: 560px) {
    .page-header__top-inner {
@@ -1008,7 +1184,9 @@ img {
         flex-wrap: nowrap;
     position: relative;
 	padding-top: 10px;
-	padding-bottom: 8px;
+	padding-bottom: 12px;
+	padding-left: 0;
+	padding-right: 0;
 	background-color: #fff;
   }
   
@@ -1030,13 +1208,12 @@ img {
   
   .page-header__toggle--plus {
 	display: none;
-	/*! top: 12px; */
-	right: 10px;
+	right: 0;
     display: none;
 	padding: 10px 10px;
 	border-top: 2px solid #d8d5d5;
     background-color: #f0f0f0;
-	
+    box-shadow: 0 0 0px 5px #fff;
   }
   
   .page-header__toggle  svg{
@@ -1052,10 +1229,6 @@ img {
   .page-header__toggle--plus svg {
     width: 16px;
     height: 16px;
-    /*! fill: #1ab0ce; */
-    -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
   }
   
    
@@ -1067,6 +1240,7 @@ img {
   .logo {
 	min-width: 50px;
     width: 124px;
+	margin-left: 10px;
   }
 
   .promo-block {
@@ -1107,7 +1281,7 @@ img {
     /*! display: none;*/
     position: absolute;
     top: 51px;
-    width: calc(100% - 20px);
+    width: 100%;
     text-align: left;
     background-color: #f0f0f0;
     border-bottom: 2px solid #d8d5d5;
@@ -1129,7 +1303,7 @@ img {
   }
   
   .phone {
-    width: 100%;
+    /*width: 100%;*/
     padding-bottom: 7px;
     margin-left: 7px;
   }
@@ -1160,10 +1334,14 @@ img {
   }
   
    .phone__numbers {
-    top: 22px;
+    top: 27px;
     left: 8px;
     width: 208px;
     padding: 13px 0px 1px 0px;
+  }
+  
+  .phone__numbers-inner {
+    top: -12px;
   }
   
   .phone__number {
@@ -1201,8 +1379,10 @@ img {
   .main-nav {
     /*display: none;*/
     position: absolute;
-	top: 122px; 
+	top: 120px; 
     width: 100%;
+	padding-left: 0;
+	padding-right: 0;
 	
 	opacity: 0;
     visibility: hidden;
@@ -1220,6 +1400,7 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     padding-bottom: 8px;
+	border-top: 2px solid #d8d5d5;
     border-bottom: 2px solid #d8d5d5;
   }
   
@@ -1264,6 +1445,32 @@ img {
     height: 2px;
     background-color: #d8d5d5;
   }
+  
+   .order {
+    min-height: 355px;
+	background-size: auto 355px;
+    background-position: 56% 0;
+  }
+    
+  .order__promo {
+	width: 279px;
+	margin-bottom: 44px;
+	padding-top: 41px;
+	line-height: 39px;
+    font-size: 26px;     
+  }
+  
+  .order__promo::after {
+    bottom: -24px;
+  }
+  
+  .order__text {
+    width: 219px;
+	margin-left: auto;
+	margin-right: auto;
+    font-size: 20px;
+  }
+  
 }
 
 

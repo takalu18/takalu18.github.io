@@ -22,7 +22,7 @@
 		  
 		  <button id="btn-close"  class="page-header__toggle  page-header__toggle--plus" type="button" aria-label="Закрыть главное меню">
             <svg>
-              <use xlink:href="img\sprites\sprite.svg#plus"/>
+              <use xlink:href="img\sprites\sprite.svg#cross"/>
             </svg>
           </button>
 
@@ -65,11 +65,13 @@
                       </svg>				
                     </button>
 
-                    <ul id="phone-numbers" class="phone__numbers" aria-label="Наши мобильные номера">
+                    <div id="phone-numbers" class="phone__numbers" aria-label="Наши мобильные номера">
+                    <ul class="phone__numbers-inner" aria-label="Наши мобильные номера">
                       <li class="phone__number  phone__number2" tabindex="0" aria-label="Наш номер водафон (099) 485-54-18">(099) 485-54-18</li>
                       <li class="phone__number  phone__number3" tabindex="0" aria-label="Наш номер киевстар (096) 497-78-03">(096) 497-78-03</li>
                       <li class="phone__number  phone__number4" tabindex="0" aria-label="Наш номер лайф (063) 435-16-81">(063) 435-16-81</li>
                     </ul>
+                    </div>
                   </div>
                 </div>
               </div>		 
@@ -105,13 +107,17 @@
 		  </a>
 		</div>
       </nav>
-
-   
-
     </header>
 
+    <main>
+      <section class="order">
+        <p class="order__promo">Оперативная печать полиграфии от 1 дня!</p> 
+        <p class="order__text">Доставка в любой город Украины</p>
+		<a class="order__btn" href="#">Сделать заказ</a>
+      </section>
+    </main>
 
-    <script src="js/script.js"></script>
-    <!--<script src="modulargrid.js"></script>-->
+	<script src="js/script.js"></script>
+    <script src="modulargrid.js"></script>
   </body>
 </html>

@@ -38,9 +38,9 @@
           <path d="M 0 0L 18 0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(1 13)"/>
         </symbol>
 		
-		<symbol id="plus" width="16" height="16" viewBox="0 0 16 16">
-          <path id="Shape" d="M 0 0L 0 14" transform="translate(8 1)"  stroke="#3A4047" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path id="Shape_2" d="M 0 0L 14 0" transform="translate(1 8)" stroke="#3A4047" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+		<symbol id="cross" width="16" height="16" viewBox="0 0 16 16">
+          <line x1="3" y1="3" x2="13" y2="13" stroke="#3A4047" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <line x1="3" y1="13" x2="13" y2="3" stroke="#3A4047" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </symbol>
 		
 		<symbol id="search" viewBox="0 -1 20 20">

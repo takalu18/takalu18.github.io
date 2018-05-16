@@ -16,9 +16,9 @@ phoneBtn.addEventListener("click", function(event) {
 
 menuBtnOpen.addEventListener("click", function(event) {
   event.preventDefault();
+  mainNav.classList.add("modal-content-show");
   menuBtnClose.classList.add("modal-content-show");
   headerInfo.classList.add("modal-content-show");
-  mainNav.classList.add("modal-content-show");
 });
 
 
@@ -28,8 +28,6 @@ menuBtnClose.addEventListener("click", function(event) {
   headerInfo.classList.remove("modal-content-show");
   mainNav.classList.remove("modal-content-show");
 });
-
-
 
 
 window.addEventListener("keydown", function(event) {
