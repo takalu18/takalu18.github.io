@@ -39,3 +39,29 @@ window.addEventListener("keydown", function(event) {
 	}
   }
 });
+
+
+
+var productsItem = document.querySelectorAll(".products__item");
+var listWidth = 248;
+//console.log("кількість стовпців :   " + productsItem.length);
+
+for (var i = 0; i < productsItem.length; i++) {
+  //console.log(productsItem[i]);
+  var productsProduct = productsItem[i].querySelectorAll(".products__product");
+  
+  var col = 2;
+  for (var j = 0; j < productsProduct.length; j++) {
+	//console.log(productsProduct[j]);
+	
+    var productWidth = productsProduct[j].clientWidth;//ширина ссилкі
+	//console.log(productWidth);
+	  if (productWidth >= listWidth * 0.46) {
+		col = 1;
+	  }
+  }
+  
+  if (col == 2) {
+	productsItem[i].classList.add("products__item--two-col");
+  }
+}
