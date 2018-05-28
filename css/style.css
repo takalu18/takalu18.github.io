@@ -1674,10 +1674,6 @@ img {
   }
   
   .promo-block__timetable {
-	position: absolute;
-	bottom: 23px;
-	right: 0px;
-	width: 148px;
 	padding-right: 0;
   }
  
@@ -1811,6 +1807,7 @@ img {
    
    .page-footer .page-footer__col--slogan {
     padding-right: 0;
+    position: relative;
   }
 }
 
@@ -1866,6 +1863,14 @@ img {
     padding-right: 10px;
   }
   
+  .promo-block__slogan--footer {
+    margin-bottom: 9px;
+  }
+  
+  .page-footer .promo-block__timetable {
+    font-size: 13px;
+  }
+  
   .page-footer__col--menu {
     background-color: #e3e1de;
   }
@@ -1875,7 +1880,6 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    /*! text-align: left; */
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
