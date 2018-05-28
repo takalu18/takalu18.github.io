@@ -28,14 +28,11 @@
 
           <div class="logo">
             <img class="logo__img" src="img/logo-ful.svg" width="258" height="77" alt="test-verstka">
-            <!--<svg class="">
-              <use xlink:href="img\sprites\sprite.svg#logo"/>
-            </svg>-->
           </div>
 
           <div class="promo-block">
             <p class="promo-block__slogan">Качественная оперативная цифровая, широкоформатная и сувенирная полиграфия!</p>
-            <p class="promo-block__timetable">Работаем с 9 до 18, вс и сб выходные</p>
+            <p class="promo-block__timetable"  aria-label="Работаем с 9 до 18, вс и сб выходные">Работаем с 9 до 18, вс и сб выходные</p>
           </div>
 
           <div class="page-header__part-down">
@@ -50,7 +47,6 @@
               <a class="page-header__mail" href="mailto:maket@test-vertka.ua">maket@test-vertka.ua</a>
               <div class="phone">
                 <a class="phone__social" href="#" aria-label="Наш Facebook">
-                  <!--<img src="img/svg/fb-icon.svg" width="11" height="20" alt="Facebook">-->
                   <svg aria-hidden="true">
                     <use xlink:href="img/sprites/sprite.svg#facebook"/>              
                   </svg>
@@ -59,18 +55,17 @@
                   <div class="phone__number1">
                     <span class="phone__num" tabindex="0" aria-label="Наш киевский номер (044) 345-40-42">(044) 345-40-42</span>
                     <button id="phone-btn" class="phone__btn" type="button" aria-label="показать или спрятать список всех номеров">
-                      <!--<img src="img/svg/icon-chevron.svg" width="20" height="20" alt="Other phones">-->
                       <svg>
                         <use xlink:href="img/sprites/sprite.svg#chevron-down"/>
                       </svg>				
                     </button>
 
-                    <div id="phone-numbers" class="phone__numbers" aria-label="Наши мобильные номера">
-                    <ul class="phone__numbers-inner" aria-label="Наши мобильные номера">
-                      <li class="phone__number  phone__number2" tabindex="0" aria-label="Наш номер водафон (099) 485-54-18">(099) 485-54-18</li>
-                      <li class="phone__number  phone__number3" tabindex="0" aria-label="Наш номер киевстар (096) 497-78-03">(096) 497-78-03</li>
-                      <li class="phone__number  phone__number4" tabindex="0" aria-label="Наш номер лайф (063) 435-16-81">(063) 435-16-81</li>
-                    </ul>
+                    <div id="phone-numbers" class="phone__numbers">
+                      <ul class="phone__numbers-inner" aria-label="Наши мобильные номера">
+                        <li class="phone__number  phone__number2" tabindex="0" aria-label="Наш номер водафон (099) 485-54-18">(099) 485-54-18</li>
+                        <li class="phone__number  phone__number3" tabindex="0" aria-label="Наш номер киевстар (096) 497-78-03">(096) 497-78-03</li>
+                        <li class="phone__number  phone__number4" tabindex="0" aria-label="Наш номер лайф (063) 435-16-81">(063) 435-16-81</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
@@ -78,7 +73,6 @@
             </div>
 
             <a class="page-header__basket" href="#" aria-label="Корзина">
-              <!--<img src="img/svg/icon-cart.svg" width="46" height="46" alt="shopping-cart">-->
               <svg>
                 <use xlink:href="img/sprites/sprite.svg#basket"/>
               </svg>
@@ -95,9 +89,9 @@
           <a class="main-nav__item" href="#"><span>Главная</span></a>
           <a class="main-nav__item" href="#anchor-products"><span>Продукция</span></a> 
           <a class="main-nav__item" href="#"><span>Доставка и оплата</span></a>
-          <a class="main-nav__item" href="#"><span>Новости</span></a>
+          <a class="main-nav__item" href="#anchor-news"><span>Новости</span></a>
           <a class="main-nav__item" href="#"><span>База знаний</span></a>
-          <a class="main-nav__item" href="#"><span>О нас</span></a>
+          <a class="main-nav__item" href="#anchor-about"><span>О нас</span></a>
           <a class="main-nav__item" href="#"><span>Контакты</span></a>
           <a class="main-nav__item  main-nav__item--search" href="#">
 			  <svg>
@@ -109,14 +103,14 @@
       </nav>
     </header>
 
-    <main>
-      <section class="order">
-        <p class="order__promo">Оперативная печать полиграфии от 1 дня!</p> 
+     <main class="main">
+      <section id="order"  class="order">
+        <p class="order__promo" aria-label="Оперативная печать полиграфии от 1 дня!">Оперативная печать полиграфии от 1 дня!</p> 
         <p class="order__text">Доставка в любой город Украины</p>
 		<a class="order__btn" href="#">Сделать заказ</a>
       </section>
 
-      <section class="products">
+    <section class="products">
         <h2 class="products__title"><a id="anchor-products">Продукция</a></h2>
 		
         <div class="products__content">
@@ -131,7 +125,7 @@
               <li><a class="products__product" href="#">Фирменные бланки</a></li>
             </ul>
           </div>
-		
+
           <div class="products__item  products__item--road-map">
             <h3 class="products__item-title">Рекламная продукция</h3>
             <ul>
@@ -146,7 +140,7 @@
               <li><a class="products__product" href="#">Блокноты</a></li> 			
             </ul>
           </div>
-		
+
           <div class="products__item  products__item--e-reader">
             <h3 class="products__item-title">Для бизнеса</h3>
             <ul>
@@ -154,15 +148,104 @@
               <li><a class="products__product" href="#">Журналы</a></li> 
               <li><a class="products__product" href="#">Дисконтные карты</a></li> 
               <li><a class="products__product" href="#">Бейджи</a></li> 
-              <li><a class="products__product" href="#">Гарантиныйные наклейки</a></li>
+              <li><a class="products__product" href="#">Гарантийные наклейки</a></li>
             </ul>
           </div>
         </div>
+      </section>
 
+      <section class="about">
+        <h2 class="about__title"><a id="anchor-about">О нас</a></h2>
+        <p class="about__slogan" aria-label="Оперативная печать полиграфии от 1 дня!">Оперативная печать полиграфии от 1 дня!</p>
+        <p class="about__text">Перед долгим заплывом намажьтесь солнцезащитным кремом. Вода не спасает от вредного излучения, оно проникает и на глубину 1 м. </br>
+           Прежде чем отправиться на пляж, съешьте что-нибудь солененькое или выпейте чай с лимоном. Считается, что тем самым вы предотвратите потерю важных минеральных веществ, которые покидают тело вместе с потом, а загар при этом ляжет ровнее. Находясь на солнце, следует больше двигаться — плавать, делать гимнастику, играть в мяч и т.д. Лучше ходить босиком, чем в тапочках. Не рекомендуется покрывать ногти лаком, пусть они отдохнут и получат солнечные лучи и воздух.</p>
+      </section>
+
+      <section class="news">
+        <h2 class="news__title"><a id="anchor-news">Новости</a></h2>
+        <div class="news__list">            
+          <a class="news__item" href="#">
+            <time class="news__data">14 марта 2018</time>
+            <p class="news__content">Оазисное земледелие поднимает культурный субэкваториальный климат, там же можно с палками</p>	  
+
+          <a class="news__item" href="#">
+            <time class="news__data">14 марта 2018</time>
+            <p class="news__content">Оазисное земледелие поднимает культурный субэкваториальный климат, там же можно с палками</p>
+          </a>
+
+          <a class="news__item" href="#">
+            <time class="news__data">14 марта 2018</time>
+            <p class="news__content">Оазисное земледелие поднимает культурный субэкваториальный климат, там же можно с палками</p>
+          </a>
+        </div>
+
+        <a class="news__btn" href="#">Смотреть все новости</a>
       </section>
     </main>
 
-	<script src="js/script.js"></script>
+    <footer class="page-footer">
+      <div class="page-footer__inner">
+        <div class="page-footer__col  page-footer__col--logo">
+          <div class="logo">
+            <img class="logo__img" src="img/logo-ful.svg" width="258" height="77" alt="test-verstka">
+          </div>
+          <span class="page-footer__copyright-left">2018 — Все права защищены</span>
+        </div>
+		
+        <div class="promo-block  page-footer__col  page-footer__col--slogan">
+          <p class="promo-block__slogan  promo-block__slogan--footer">Качественная оперативная цифровая, широкоформатная и сувенирная полиграфия!</p>
+          <p class="promo-block__timetable">Работаем с 9 до 18, вс и сб выходные</p>
+        </div>
+
+        <div class="page-footer__col  page-footer__col--menu">
+          <ul class="page-footer__nav"  aria-label="Mеню"  role="navigation">
+            <li><a class="page-footer__nav-item" href="#">Главная</a></li>
+            <li><a class="page-footer__nav-item" href="#anchor-news">Новости</a></li>  
+            <li><a class="page-footer__nav-item" href="#anchor-products">Продукция</a></li> 
+            <li><a class="page-footer__nav-item" href="#">База знаний</a></li>
+            <li><a class="page-footer__nav-item" href="#">Доставка и оплата</a></li>
+            <li><a class="page-footer__nav-item" href="#anchor-about">О нас</a></li>
+            <li><a class="page-footer__nav-item" href="#">Контакты</a></li>
+          </ul>
+        </div>
+		
+        <div class="page-footer__col  page-footer__col--contacts">
+          <div class="phone  phone--footer">
+            <a class="phone__social" href="#" aria-label="Наш Facebook">
+              <svg aria-hidden="true">
+                <use xlink:href="img/sprites/sprite.svg#facebook"/>              
+              </svg>
+            </a>
+				
+            <div class="phone__number1-wrapper">
+              <div class="phone__number1">
+                <span class="phone__num  phone__num--footer" tabindex="0" aria-label="Наш киевский номер (044) 345-40-42">(044) 345-40-42</span>
+				  
+                <button id="footer-phone-btn" class="phone__btn" type="button" aria-label="показать или спрятать список всех номеров">
+                    <svg>
+                      <use xlink:href="img/sprites/sprite.svg#chevron-down"/>
+                    </svg>				
+                </button>
+
+                <div id="footer-phone-numbers" class="phone__numbers">
+                  <ul class="phone__numbers-inner" aria-label="Наши мобильные номера">
+                    <li class="phone__number  phone__number2" tabindex="0" aria-label="Наш номер водафон (099) 485-54-18">(099) 485-54-18</li>
+                    <li class="phone__number  phone__number3" tabindex="0" aria-label="Наш номер киевстар (096) 497-78-03">(096) 497-78-03</li>
+                    <li class="phone__number  phone__number4" tabindex="0" aria-label="Наш номер лайф (063) 435-16-81">(063) 435-16-81</li>
+                  </ul>
+                </div>				  
+              </div>
+            </div>
+          </div> 
+
+          <a class="page-footer__contacts" href="#">Контакты</a>
+          <span class="page-footer__copyright-right">Глянец - Разработка сайтов</span>		  
+        </div>
+      </div>
+	</footer>
+	
+
+    <script src="js/script.js"></script>
     <!--<script src="modulargrid.js"></script>-->
   </body>
 </html>

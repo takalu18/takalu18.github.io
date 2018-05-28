@@ -1,12 +1,20 @@
 var phoneBtn = document.getElementById("phone-btn");
 var phoneNumbers = document.getElementById("phone-numbers");
+var footerPhoneBtn = document.getElementById("footer-phone-btn");
+var footerPhoneNumbers = document.getElementById("footer-phone-numbers");
 
 
 var menuBtnOpen = document.getElementById("btn-open");
 var menuBtnClose = document.getElementById("btn-close");
 var headerInfo = document.getElementById("header-info");
 var mainNav = document.getElementById("main-nav");
+var order = document.getElementById("order");
 
+
+footerPhoneBtn.addEventListener("click", function(event) {
+  event.preventDefault();
+  footerPhoneNumbers.classList.toggle("modal-content-show");
+});
 
 phoneBtn.addEventListener("click", function(event) {
   event.preventDefault();
@@ -19,6 +27,7 @@ menuBtnOpen.addEventListener("click", function(event) {
   mainNav.classList.add("modal-content-show");
   menuBtnClose.classList.add("modal-content-show");
   headerInfo.classList.add("modal-content-show");
+  order.classList.add("modal-order");
 });
 
 
@@ -27,6 +36,7 @@ menuBtnClose.addEventListener("click", function(event) {
   menuBtnClose.classList.remove("modal-content-show");  
   headerInfo.classList.remove("modal-content-show");
   mainNav.classList.remove("modal-content-show");
+  order.classList.remove("modal-order");
 });
 
 
@@ -36,6 +46,7 @@ window.addEventListener("keydown", function(event) {
 	  menuBtnClose.classList.remove("modal-content-show");  
       headerInfo.classList.remove("modal-content-show");
       mainNav.classList.remove("modal-content-show");
+      order.classList.remove("modal-order");
 	}
   }
 });
@@ -44,18 +55,14 @@ window.addEventListener("keydown", function(event) {
 
 var productsItem = document.querySelectorAll(".products__item");
 var listWidth = 248;
-//console.log("кількість стовпців :   " + productsItem.length);
 
 for (var i = 0; i < productsItem.length; i++) {
-  //console.log(productsItem[i]);
   var productsProduct = productsItem[i].querySelectorAll(".products__product");
   
   var col = 2;
   for (var j = 0; j < productsProduct.length; j++) {
-	//console.log(productsProduct[j]);
 	
     var productWidth = productsProduct[j].clientWidth;//ширина ссилкі
-	//console.log(productWidth);
 	  if (productWidth >= listWidth * 0.46) {
 		col = 1;
 	  }
