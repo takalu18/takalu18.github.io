@@ -2,13 +2,20 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Test</title>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
-	<script src="js/modernizr-custom.js"></script>	
-	<script src="js/svg4everybody.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Test</title>
+    <link rel="preload" href="fonts/Cuprum-Regular.woff2" as="font">
+    <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font">
+    <link rel="preload" href="fonts/ClearSans-Regular.woff" as="font">
+    <link rel="preload" href="fonts/ClearSans-Bold.woff" as="font"> 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/modernizr-custom.js"></script>	
+    <script src="js/svg4everybody.js"></script>
     <script>svg4everybody();</script>
+    <link rel="preload" href="js/script.js" as="script">
+    <!-- <link rel="preload" href="img/header-bg.jpg" as="image"> -->
+    <!-- <link rel="preload" href="fonts/Cuprum-Regular.woff2" as="font"> --> 
   </head>
   <body>  
     <header class="page-header">
@@ -19,8 +26,8 @@
               <use xlink:href="img\sprites\sprite.svg#toggle"/>
             </svg>
           </button>
-		  
-		  <button id="btn-close"  class="page-header__toggle  page-header__toggle--plus" type="button" aria-label="Закрыть главное меню">
+
+          <button id="btn-close"  class="page-header__toggle  page-header__toggle--plus" type="button" aria-label="Закрыть главное меню">
             <svg>
               <use xlink:href="img\sprites\sprite.svg#cross"/>
             </svg>
@@ -36,7 +43,7 @@
           </div>
 
           <div class="page-header__part-down">
-            <a class="page-header__user-block" href="#" aria-label="Личный кабинет">		  
+            <a class="page-header__user-block" href="#" aria-label="Личный кабинет">
               <svg class="page-header__user">
                 <use xlink:href="img\sprites\sprite.svg#icon-user"/>
               </svg>
@@ -48,7 +55,7 @@
               <div class="phone">
                 <a class="phone__social" href="#" aria-label="Наш Facebook">
                   <svg aria-hidden="true">
-                    <use xlink:href="img/sprites/sprite.svg#facebook"/>              
+                    <use xlink:href="img/sprites/sprite.svg#facebook"/>
                   </svg>
                 </a>
                 <div class="phone__number1-wrapper">
@@ -57,7 +64,7 @@
                     <button id="phone-btn" class="phone__btn" type="button" aria-label="показать или спрятать список всех номеров">
                       <svg>
                         <use xlink:href="img/sprites/sprite.svg#chevron-down"/>
-                      </svg>				
+                      </svg>
                     </button>
 
                     <div id="phone-numbers" class="phone__numbers">
@@ -69,7 +76,7 @@
                     </div>
                   </div>
                 </div>
-              </div>		 
+              </div>
             </div>
 
             <a class="page-header__basket" href="#" aria-label="Корзина">
@@ -78,10 +85,10 @@
               </svg>
               <div class="page-header__basket-circle">
                 <span class="page-header__basket-number">3</span>
-              </div>		   
+              </div>
             </a>
           </div>
-		</div>
+        </div>
       </div>
 
       <nav id="main-nav"  class="main-nav"  aria-label="Основное меню"  role="navigation">
@@ -94,12 +101,12 @@
           <a class="main-nav__item" href="#anchor-about"><span>О нас</span></a>
           <a class="main-nav__item" href="#"><span>Контакты</span></a>
           <a class="main-nav__item  main-nav__item--search" href="#">
-			  <svg>
-                <use xlink:href="img/sprites/sprite.svg#search"/>
-              </svg>
-			  Пошук
-		  </a>
-		</div>
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#search"/>
+            </svg>
+            Пошук
+          </a>
+        </div>
       </nav>
     </header>
 
@@ -107,12 +114,12 @@
       <section id="order"  class="order">
         <p class="order__promo" aria-label="Оперативная печать полиграфии от 1 дня!">Оперативная печать полиграфии от 1 дня!</p> 
         <p class="order__text">Доставка в любой город Украины</p>
-		<a class="order__btn" href="#">Сделать заказ</a>
+        <a class="order__btn" href="#">Сделать заказ</a>
       </section>
 
     <section class="products">
         <h2 class="products__title"><a id="anchor-products">Продукция</a></h2>
-		
+
         <div class="products__content">
           <div class="products__item  products__item--blank-page">
             <h3 class="products__item-title">Офисная продукция</h3>
@@ -166,7 +173,8 @@
         <div class="news__list">            
           <a class="news__item" href="#">
             <time class="news__data">14 марта 2018</time>
-            <p class="news__content">Оазисное земледелие поднимает культурный субэкваториальный климат, там же можно с палками</p>	  
+            <p class="news__content">Оазисное земледелие поднимает культурный субэкваториальный климат, там же можно с палками</p>
+          </a>			
 
           <a class="news__item" href="#">
             <time class="news__data">14 марта 2018</time>
@@ -191,7 +199,7 @@
           </div>
           <span class="page-footer__copyright-left">2018 — Все права защищены</span>
         </div>
-		
+
         <div class="promo-block  page-footer__col  page-footer__col--slogan">
           <p class="promo-block__slogan  promo-block__slogan--footer">Качественная оперативная цифровая, широкоформатная и сувенирная полиграфия!</p>
           <p class="promo-block__timetable">Работаем с 9 до 18, вс и сб выходные</p>
@@ -208,23 +216,23 @@
             <li><a class="page-footer__nav-item" href="#">Контакты</a></li>
           </ul>
         </div>
-		
+
         <div class="page-footer__col  page-footer__col--contacts">
           <div class="phone  phone--footer">
             <a class="phone__social" href="#" aria-label="Наш Facebook">
               <svg aria-hidden="true">
-                <use xlink:href="img/sprites/sprite.svg#facebook"/>              
+                <use xlink:href="img/sprites/sprite.svg#facebook"/>
               </svg>
             </a>
-				
+
             <div class="phone__number1-wrapper">
               <div class="phone__number1">
                 <span class="phone__num  phone__num--footer" tabindex="0" aria-label="Наш киевский номер (044) 345-40-42">(044) 345-40-42</span>
-				  
+
                 <button id="footer-phone-btn" class="phone__btn" type="button" aria-label="показать или спрятать список всех номеров">
                     <svg>
                       <use xlink:href="img/sprites/sprite.svg#chevron-down"/>
-                    </svg>				
+                    </svg>
                 </button>
 
                 <div id="footer-phone-numbers" class="phone__numbers">
@@ -233,19 +241,19 @@
                     <li class="phone__number  phone__number3" tabindex="0" aria-label="Наш номер киевстар (096) 497-78-03">(096) 497-78-03</li>
                     <li class="phone__number  phone__number4" tabindex="0" aria-label="Наш номер лайф (063) 435-16-81">(063) 435-16-81</li>
                   </ul>
-                </div>				  
+                </div>
               </div>
             </div>
           </div> 
 
           <a class="page-footer__contacts" href="#">Контакты</a>
-          <span class="page-footer__copyright-right">Глянец - Разработка сайтов</span>		  
+          <span class="page-footer__copyright-right">Глянец - Разработка сайтов</span>
         </div>
       </div>
-	</footer>
-	
+    </footer>
+
 
     <script src="js/script.js"></script>
-    <!--<script src="modulargrid.js"></script>-->
+    <!-- <script src="modulargrid.js"></script> -->
   </body>
 </html>
